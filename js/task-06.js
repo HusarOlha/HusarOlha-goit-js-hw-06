@@ -7,6 +7,7 @@ function onInputBlur() {
   const attribute = Number(inputEl.getAttribute("data-length"));
 
   if (inputEl.value.length === attribute) {
+    inputEl.classList.remove("invalid");
     inputEl.classList.add("valid");
   } else if (inputEl.value.length !== attribute) {
     inputEl.classList.add("invalid");

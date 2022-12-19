@@ -9,9 +9,11 @@ function onSubmitForm(event) {
   const formElements = event.currentTarget.elements;
 
   if (formElements.email.value === "") {
-    alert("Enter your parrword");
+    alert("Enter your email");
+    return false;
   } else if (formElements.password.value === "") {
     alert("Enter your password");
+    return false;
   }
   const mail = formElements.email.value;
   const password = formElements.password.value;

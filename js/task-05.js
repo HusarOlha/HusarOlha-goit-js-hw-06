@@ -15,4 +15,7 @@ let newName = "";
 function onInput(event) {
   newName = event.currentTarget.value;
   nameLabel.textContent = newName;
+  if (!event.currentTarget.value) {
+    nameLabel.textContent = "Anonymous";
+  }
 }
